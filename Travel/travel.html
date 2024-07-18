@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insured Travel</title>
+    <link rel="stylesheet" href="travel.css">
+    <style>
+        hr{
+            border: none;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+                <div class="nav-left">
+                    <img src="airplane.png" alt="travel" style="width:35px; height:35px">
+                    <a href="#"><span style="color: lightblue;">Travel</span> with <span style="color: red;">BAIBHAB</span></a>
+                </div>
+                <ul class="nav-right">
+                    <li><a href="#home"><span style="color: plum;">Home</span></a></li>
+                <li><a href="#compareplans">Compare Plans</a></li>
+                <li><a href="#claims">Claims</a></li>
+                <li><a href="#helpcenter">Help Center</a></li>
+                <li><a href="#coveragealerts">Coverage Alerts</a></li>
+                <li><a href="#about">About</a></li>
+                <div class="small-box">
+                <li><img src="email.png" style="width:32px; height:32px"></li>
+                <li><img src="phone-call.png" style="width:32px; height:32px"></li></div>
+                <li><image src="enter.png" style="width:32px; height:32px"></image></li></div>
+                <li class="button"><a href="#login">Login</a></li>
+            </ul>
+    </nav><br><br><br><br><br><br><br>
+    <div class="container" style="background-color: deepskyblue;">
+        <h2 style="color: powderblue;">Help us choose the right plan for you</h2><br>
+        <div class="radio-button" style="text-align: left;">
+            <label class="radio-choose">
+            <input type="radio" name="radio-choose" value="one-trip">One Trip</label>
+            <label class="radio-choose">
+                <input type="radio" name="radio-choose" value="Annual">Annual</label>
+            </label><div style="text-align: right; font-size: 10px;">
+            <a href="#" ><u>Are you a resident of Canada?</u></a></div>
+        </div><br>
+        <div class="fields" style="text-align: center;">
+            <div class="date">
+            <label for="date"><span style="font-size: 15px">Dates of travel:</span>
+            <input type="date" name="date" class="form-control"></label></div>
+            <label for="place"><span style="font-size: 15px; padding-left: 75px;">State of Residence:</span>
+            <input type="text" name="place" class="form-control" placeholder="Enter your Residence"></label><br><br><br>            
+        </div>
+            <div class="fields2">
+                <label for="info"><span style="font-size: 15px">Traveller's info:</span>
+                <input type="text" name="info" class="form-control" placeholder="Enter your information"></label><br>
+                    <label for="amount"><span style="font-size: 15px">Enter the travel amount:</span>
+                    <input type="number" name="date" class="form-control" placeholder="Emter amount"></label>
+            </div><br>
+            <button type="button" onclick="showAlert()" style="background-color: yellowgreen; border-radius: 10px; padding: 1rem 2rem;"><span style="color: darkslategrey; font-size: 17px;">GET A QUOTE</span></button>
+    </div>
+    <script>
+        function showAlert() {
+            alert("Your quote has been sent successfully");
+        }
+    </script>
+</body>
+</html>
