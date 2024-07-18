@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Railway Ticket Reservation</title>
+    <link rel="stylesheet" href="onlineticket.css">
+    <style>
+        hr{
+            border: none;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+                <div class="nav-left">
+                    <img src="train-station.png" alt="travel" style="width:50px; height:50px">
+                    <a href="#"><span style="color: lightblue;font-size: x-large;">ONLINE RAILWAY TICKET BOOKING</span></a>
+                </div>
+                <ul class="nav-right">
+                    <li><a href="#home"><span style="color: plum;">Home</span></a></li>
+                <li><a href="#Meals">Meals</a></li>
+                <li><a href="#claims">Claims</a></li>
+                <li><a href="#helpcenter">Help Center</a></li>
+                <li><a href="#More">More</a></li>
+                <li><a href="#about">About</a></li>
+                <div class="small-box">
+                <li><img src="mail.png" style="width:32px; height:32px"></li>
+                <li><img src="phone-call.png" style="width:32px; height:32px"></li></div>
+                <li><image src="login.png" style="width:32px; height:32px"></image></li></div>
+                <li class="button"><a href="#login">Login</a></li>
+            </ul>
+    </nav><br>
+    <div class="container">
+        <h2 style="color: powderblue;">Travel with Comfort and Safety</h2>
+        <p style="font-size: medium;color:azure ;">Book your railway tickets easily and quickly</p>
+    </div><br><br>
+    <div class="container2">
+        <h2 style="color: powderblue;"><img src="ticket.png" style="width:45px; height:45px"><span>   </span>Help us plan your trip better</h2><br>
+        <div class="fields">
+            <div class="field-group">
+                <label for="date"><span style="font-size: 15px;color: aqua;">Date of travel:</span>
+                <input type="date" name="date" class="form-control"></label>
+            </div>
+            <div class="field-group">
+                <label for="Class"><span style="font-size: 15px;color: aqua;padding-left: 70px;">Enter reservation class:</span>
+                <select name="Class" id="class">
+                    <option value="" disabled selected>Enter Class</option>
+                    <option value="2S">2S</option>
+                    <option value="CC">CC</option>
+                    <option value="SL">SL</option>
+                    <option value="3A">3A</option>
+                    <option value="3E">3E</option>
+                    <option value="2A">2A</option>
+                    <option value="1st Class">1st Class</option>
+                </select>
+            </label>
+            </div><br><br><br><br>
+        </div>
+        <div class="fields2">
+            <div class="field-group">
+                <label for="Source"><span style="font-size: 15px;color: aqua;">From:</span>
+                <input type="text" name="Source" class="form-control" placeholder="Enter source station"></label>
+            </div>
+            <div class="field-group">
+                <label for="Destination"><span style="font-size: 15px;color: aqua;padding-left: 75px;">To:</span>
+                <input type="text" name="Destination" class="form-control" placeholder="Enter destination station"></label>
+            </div>
+        </div><br>
+        <button type="button" onclick="showAlert()" style="background-color: yellowgreen; border-radius: 10px; padding: 1rem 2rem;"><span style="color: darkslategrey; font-size: 17px;">BOOK TICKET</span></button>
+    </div>
+    <script>
+        function showAlert() {
+            alert("Ticket booked");
+        }
+    </script>
+</body>
+</html>
